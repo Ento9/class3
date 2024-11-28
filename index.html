@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLJ Solidaire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo PLJ Solidaire" class="logo">
+                <h1 class="title">PLJ Solidaire</h1>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> À Propos</a></li>
+                    <li><a href="#actions"><i class="fas fa-hands-helping"></i> Actions</a></li>
+                    <li><a href="#objectives"><i class="fas fa-bullseye"></i> Objectifs</a></li>
+                    <li><a href="#gallery"><i class="fas fa-images"></i> Galerie</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unissons nos forces pour un avenir meilleur</h1>
+            <p>Engagez-vous avec PLJ Solidaire pour bâtir une communauté plus forte, plus solidaire et plus innovante.</p>
+            <a href="#contact" class="cta-button">Rejoignez-nous</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2><i class="fas fa-info-circle"></i> À Propos</h2>
+            <p>PLJ Solidaire est un parti engagé pour améliorer la vie étudiante. Nous œuvrons pour l'unité, la solidarité et l'organisation d'activités mémorables.</p>
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <h3>Unité</h3>
+                    <p>Nous renforçons les liens entre les étudiants pour créer une communauté soudée.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Solidarité</h3>
+                    <p>Nous encourageons l'entraide et la réussite collective.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>Des projets créatifs qui améliorent la vie étudiante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIONS -->
+    <section id="actions" class="actions">
+        <div class="container">
+            <h2><i class="fas fa-hands-helping"></i> Actions Passées</h2>
+            <ul>
+                <li>Organisation d'un dîner pizza pour renforcer les liens entre les élèves.</li>
+                <li>Distribution de friandises en classe.</li>
+                <li>Création de la plateforme <a href="https://pljsolidaire.netlify.app" target="_blank">PLJ Solidaire</a>.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- OBJECTIVES -->
+    <section id="objectives" class="objectives">
+        <div class="container">
+            <h2><i class="fas fa-bullseye"></i> Objectifs Futurs</h2>
+            <p>Pour cette année, nous souhaitons :</p>
+            <ul>
+                <li>Organiser des sorties scolaires (cinéma, bowling, etc.).</li>
+                <li>Renforcer la communication et la cohésion de classe.</li>
+                <li>Proposer de nouveaux projets qui profitent à tous.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2><i class="fas fa-images"></i> Galerie</h2>
+            <div class="gallery-grid">
+                <img src="img/card1.png" alt="Action 1">
+                <img src="img/card2.jpg" alt="Action 2">
+                <img src="img/card3.jpg" alt="Action 3">
+                <img src="img/card4.jpg" alt="Action 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p>Pour toute question ou suggestion, contactez-nous à <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCQB4Yg8-ZGyWybm4vnpI_901onkgKUsDZPxGi38AP77QcRw/viewform?usp=sf_link">Notre Forms</a></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2024 PLJ Solidaire - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
