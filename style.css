@@ -443,6 +443,7 @@ body {
         right: 0;
         bottom: 0;
         font-size: 14px;
+        border-radius: 0;
     }
 
     .popup a {
