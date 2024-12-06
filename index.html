@@ -118,6 +118,22 @@
         <p>© 2024 PLJ Solidaire - Tous droits réservés</p>
     </footer>
 
+    <div id="popup" class="popup">
+        <a href="https://docs.google.com/document/d/1lmfa_IqntRdXK1mZQ2zCWB3GZY9BEbuzEH5uVfXCP8s/edit?usp=sharing" target="_blank">
+            <i class="fas fa-chalkboard-teacher"></i> Découvrez nos Templates de Documents
+        </a>
+    </div>
+
     <script src="script.js"></script>
+    <script>
+        // Fonction pour afficher automatiquement la popup avec un effet de fondu
+        window.onload = function() {
+            const popup = document.getElementById('popup');
+            setTimeout(() => {
+                popup.classList.add('show');
+            }, 100);  // Petit délai pour l'animation
+        }
+    </script>
+
 </body>
 </html>

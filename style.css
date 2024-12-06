@@ -383,6 +383,75 @@ body {
 }
 
 
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    display: none;
+    opacity: 0;
+    transform-origin: bottom right;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1000;
+}
+
+.popup.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.popup a {
+    text-decoration: none;
+    color: rgb(75, 144, 184);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.5s ease;
+}
+
+.popup a:hover {
+    color: #0056b3;
+}
+
+.popup a i {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: #007BFF;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .popup {
+        width: 100%;
+        padding: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0;
+        text-align: center;
+        margin: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 14px;
+    }
+
+    .popup a {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
 /* Animations */
 @keyframes fadeInDown {
     from {
